@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-/* ===== КАСТОМНЫЕ ИСКЛЮЧЕНИЯ ===== */
+/* Исключения */
 
 class UserLimitExceededException extends Exception {
     public UserLimitExceededException(String message) {
@@ -32,7 +32,7 @@ class AuthenticationException extends Exception {
     }
 }
 
-/* ===== ОСНОВНОЙ КЛАСС ===== */
+/* Основной класс*/
 
 public class AuthSystem {
 
@@ -221,7 +221,7 @@ public class AuthSystem {
                 digits++;
             } else if ((c >= 'a' && c <= 'z') ||
                        (c >= 'A' && c <= 'Z')) {
-                // латиница
+                // Текст только латиница 
             } else {
                 specials++;
             }
